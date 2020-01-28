@@ -1,6 +1,15 @@
-version: "3.7"
+version: '3.4'
 
 services:
+  testnginx:
+    image: ${DOCKER_REGISTRY-}testnginx
+    depends_on:
+        - reverseproxy
+    build:
+      context: .
+      dockerfile: TestNginx/Dockerfile
+    expose:
+        - 5000
 
   reverseproxy:
     build:
@@ -9,16 +18,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    restart: always
-
-  api:
-    depends_on:
-      - reverseproxy
-    build:
-      context: ./aspnet-core
-      dockerfile: Dockerfile
-    expose:
-      - "5000"
     restart: always
 
 # docker-compose build

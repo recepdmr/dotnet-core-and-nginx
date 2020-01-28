@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\Desktop\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\TestNginx.csproj": {}
+    "C:\\Users\\recep\\source\\repos\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\TestNginx.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\Desktop\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\TestNginx.csproj": {
+    "C:\\Users\\recep\\source\\repos\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\TestNginx.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\TestNginx.csproj",
+        "projectUniqueName": "C:\\Users\\recep\\source\\repos\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\TestNginx.csproj",
         "projectName": "TestNginx",
-        "projectPath": "C:\\Users\\Dell\\Desktop\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\TestNginx.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\Desktop\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\obj\\",
+        "projectPath": "C:\\Users\\recep\\source\\repos\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\TestNginx.csproj",
+        "packagesPath": "C:\\Users\\recep\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\recep\\source\\repos\\dotnet-core-and-nginx\\aspnet-core\\TestNginx\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\recep\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "\\\\192.168.20.34\\c$\\IpekPackages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.9.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
